@@ -1,0 +1,228 @@
+@font-face {
+  font-family: airport;
+  src: url(../font/Airport.ttf);
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  padding: 15px 25px;
+  color: white;
+}
+.header-text div {
+  font-family: airport, Arial, sans-serif;
+  font-size: 2rem;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.4);
+}
+.header-logo img {
+  width: 120px;
+  height: 60px;
+  border-radius: 25%;
+  opacity: 0.9;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.main-content {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+  gap: 20px;
+  align-items: stretch; 
+}
+.left-column,
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.left-column {
+  flex: 2;
+}
+.right-column {
+  flex: 1;
+  justify-content: space-between; 
+}
+.menu-block,
+.content-block,
+.contacts-block,
+.news-block,
+.author-block {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  padding: 15px 20px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+}
+.menu-block {
+  background: rgba(100, 149, 237, 0.2);
+  flex: none;
+}
+.menu-block h2 {
+  margin-top: 0;
+  color: #2575fc;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.menu-block ul {
+  list-style: none;
+  padding: 0;
+}
+.menu-block ul li {
+  margin-bottom: 8px;
+}
+.menu-block ul li a {
+  text-decoration: none;
+  color: #2575fc;
+  font-weight: bold;
+}
+.content-block {
+  flex-grow: 1;
+}
+.contacts-block {
+  background: rgba(230, 245, 255, 0.9);
+  flex: none;
+  min-height: 150px; 
+}
+.contacts-block h2 {
+  margin-top: 0;
+  color: #0057b7;
+}
+.news-block {
+  flex: 1; 
+  min-height: 400px; 
+}
+.news-block h2 {
+  margin-top: 0;
+  color: #6a11cb;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.news-block ul {
+  list-style: square;
+  padding-left: 20px;
+}
+.author-block {
+  background: rgba(240, 240, 255, 0.9);
+  flex: none;
+  min-height: 150px; 
+}
+.author-block h2 {
+  margin-top: 0;
+  color: #6a11cb;
+}
+footer {
+  text-align: center;
+  padding: 12px;
+  background: #2575fc;
+  color: white;
+  font-size: 0.9rem;
+}
+.about-section {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.about-title {
+  font-family: "Airport", Arial, sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+.about-list li {
+  background: #e0eafc;
+  margin: 8px 0;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+.about-highlight {
+  text-align: center;
+  font-weight: bold;
+  color: #34495e;
+  margin-top: 30px;
+  font-size: 1.2rem;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  background: white; /* белый фон */
+  border-bottom: 2px solid #ddd; /* лёгкая линия снизу */
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* лёгкая тень */
+}
+.navbar a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: 600;
+  font-family: Arial, sans-serif;
+  transition: 0.3s ease;
+}
+.navbar a:hover {
+  color: #0077cc;
+  transform: scale(1.05);
+}
+.navbar a.active {
+  color: #0077cc;
+  border-bottom: 2px solid #0077cc;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100px; 
+}
+main {
+  flex: 1;
+}
+.about-block {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 25px 30px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+  max-width: 900px;
+  margin: 30px auto;
+  line-height: 1.6;
+}
+.about-image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.about-image img {
+  width: 160px;
+  height: 160px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.about-image img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
